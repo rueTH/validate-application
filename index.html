@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="validation.css">
+  <title>banking-form</title>
+
+</head>
+<body>
+  <header>
+    <div><h1>banking-form</h1></div>
+    <button type="submit" id="btnSubmit">Submit Application!</button>
+  </header><br>
+  <main class="container">
+    <form>
+      <fieldset>
+        <legend>Loan Application</legend>
+        <fieldset for="textFields" id="textFields">
+          <legend>Applicant Information</legend>
+          <div class="textFields" id="leftFields">
+            <label for="firstName">First name: </label>
+              <input type="text" name="firstName" required placeholder="Enter your first name"><br><br>
+            <label for="middleInitial">Middle initial: </label>
+              <input type="text" name="middleInitial" placeholder="Enter your middle initial" size="1"><br><br>
+            <label for="lastName">Last name: </label>
+              <input type="text" name="lastName" required placeholder="Enter your last name"><br><br>
+            <label for="address">Home address: </label>
+              <input type="text" name="address" required placeholder="Enter a valid street address"><br><br>
+            <label for="emailField">E-mail address: </label>
+              <input type="email" name="emailField" required placeholder="Enter a valid email address"><br><br>
+            <label for="phoneField">Telephone number: </label>
+              <input type="tel" name="phoneField" required placeholder="(###)###-####" size="13" title='Phone Number (Format: (999)999-9999)' pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}]'><br><br>    
+          </div>
+          <div class="textFields" id="rightFields"> 
+            <label for="occupation">Occupation: </label>
+              <input type="text"  name="occupation" required placeholder="Enter current occupation"><br><br>
+            <label for="linkedIn">LinkedIn URL: </label>
+              <input type="url" name="linkedIn" required placeholder="Enter LinkedIn URL" pattern="https?://.+"><br><br>
+            <label for="employer">Employer: </label>
+              <input type="text" name="employer" required placeholder="Enter employer name"><br><br>
+            <label for="employerAddress">Employer address: </label>
+              <input type="text" name="employerAddress" required placeholder="Enter employer address"><br><br>
+            <label for="amtRequested">Requested amount of loan: </label>
+              <input type="number" name="amtRequested" required placeholder="Enter requested amount"><br><br>
+          </div>
+        </fieldset>
+<!--potentially add radio to container of checkbox inputs--> 
+        <fieldset for="commentsBox" id="commentsBox">
+          <legend>Additional comments:</legend>
+            <textarea name="commentsBox" id="comment-textarea"></textarea>
+        </fieldset>
+        <fieldset for="clickThings" id="clickThings">
+          <legend>Loan information</legend>
+          <fieldset for="loanType" class="clickThings" id="loanType" required>
+            <legend>Type of Loan</legend>
+              <label for="commercial">Commercial</label>
+                <input type="checkbox" class="clickThings" id="commercial" name="loanType"><br>
+              <label for="realEstate">Real estate</label>
+                <input type="checkbox" class="clickThings" id="realEstate" name="loanType"><br>
+              <label for="personal">Personal</label>
+                <input type="checkbox" class="clickThings" id="personal" name="loanType"><br>
+              <label for="mortgage">Mortgage</label>
+                <input type="checkbox"  class="clickThings" id="mortgage" name="loanType"><br>
+          </fieldset>
+          <fieldset for="loanLength" class="clickThings" id="loanLength" required>
+            <legend>Loan duration</legend>
+              <label for="5yrs">Five (5) years</label>
+                <input type="radio" class="clickThings" id="5yrs" name="loanLength"><br>
+              <label for="15yrs">Fifteen (15) years</label>
+                <input type="radio" class="clickThings" id="15yrs" name="loanLength"><br>
+              <label for="30yrs">Thirty (30) years</label>
+                <input type="radio" class="clickThings" id="30yrs" name="loanLength"><br>
+          </fieldset>
+          <fieldset for="specialConditions" class="clickThings" id="specialConditions">
+            <legend>Special conditions</legend>
+              <label for="downPayment">I have a down payment</label>
+                <input type="checkbox"  class="clickThings" id="downPayment" name="specialConditions"><br>
+              <label for="nonResident">Out-of-state resident</label>
+                <input type="checkbox" class="clickThings" id="nonResident" name="specialConditions"><br>
+              <label for="married">Married</label>
+                <input type="checkbox" class="clickThings" id="married" name="specialConditions"><br>
+              <label for="co-signed">Loan will be co-signed</label>
+                <input type="checkbox" class="clickThings" id="co-signed" name="specialConditions"><br>
+          </fieldset>
+        </fieldset>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <div class="copyWrite">
+      <label for="h3">This assignment:</label>
+        <h3>/the-static-web/exercises/banking-form</h3>
+      <h4>&copy;rue.TH</h4>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  color: #660033;
+
+}
+
+header {
+  display: block;
+  position: relative;
+  padding: 3%;
+  height: 20%;
+
+}
+header div {
+  float: left;
+  vertical-align: middle;
+}
+header div h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  word-wrap: nowrap;
+}
+
+#btnSubmit {
+  float: right;
+  height: 30px;
+  width: 40%;
+}
+
+main {
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 5%;
+}
+
+input[required]:invalid {
+  background-image: url(/images/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  border-color: red;
+  -moz-box-shadow: none;
+}
+
+input[required]:valid {
+  background-image: url(/images/valid.png);
+  background-position: right top;
+  border-color: green;
+  background-repeat: no-repeat;
+}
+
+.textFields {
+  display: inline-block;
+  position: relative;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  
+}
+.textFields label {
+  float: left;
+  text-align: left
+}
+.textFields input {
+  float: right;
+  width: 50%;
+}
+
+#leftFields {
+  float: left;
+  width: 45%;
+}
+
+#rightFields {
+  float: right;
+  width: 45%;
+}
+#loanType {
+  /*float: left;*/
+}
+
+#loanLength {
+/*  float: left;*/
+}
+
+.clickThings label {
+  text-align: left;
+  float: left;
+}
+
+.clickThings input {
+  margin-top: -1px;
+  float: right;
+  margin-right: 0;
+}
+
+#specialConditions {
+  
+
+}
+#clickThings {
+  float:left;
+  width: 35%;
+  height: 375px;
+}
+.clickThings {
+  display: block;
+  vertical-align: middle;
+  margin-top: 2%;
+}
+#commentsBox {
+  float: right;
+  width: 57%;
+  height: 375px;
+}
+
+#comment-textarea {
+  width: 96%;
+  padding: 0;
+  margin-left: 2%;
+  height: 94%;
+
+}
+footer {
+  clear: both;
+  text-align: center;
+}
